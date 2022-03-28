@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+//-----------------------------------------------
+body {
+    font-family: "Dosis", sans-serif;
+    height: 100%;
+    background-color: black;
+}
+
+//-----------scroll------------------------
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #5dfa99, #526bf8);
+}
+//-----------------------------------
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+[class*="__container"] {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+a {
+    color: #ffff;
+}
+//----------header-----------------------------------
+.main {
+    flex: 1 1 auto;
+    &__block {
+        margin: 70px auto;
+        max-width: 400px;
+        text-align: center;
+    }
+}
+
+.block {
+    &__image {
+        position: relative;
+        margin-bottom: 50px;
+
+        img {
+            width: 60%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+
+    &__texts {
+        text-align: center;
+        color: #f9f9fd;
+        font-size: 30px;
+        line-height: 24px;
+        font-weight: 400;
+        line-height: 1.6;
+        text-transform: uppercase;
+        font-family: "Dosis", sans-serif;
+    }
+
+    &__button {
+        padding: 50px 0 0 0;
+    }
+}
+.text {
+}
+.button {
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 40px #f137a6 inset, 0 0 0 0 #f137a6;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    transition: 0.15s ease-in-out;
+}
+.button:hover {
+    box-shadow: 0 0 10px 0 #f137a6 inset, 0 0 10px 4px #f137a6;
+    color: #f137a6;
+}
